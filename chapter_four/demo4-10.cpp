@@ -7,5 +7,6 @@ using std::string;
 using std::vector;
 int main()
 {
-    vector<int>::size_type cnt = ivec.size();
+    // vector<int>::size_type cnt = ivec.size();
+    
 }
