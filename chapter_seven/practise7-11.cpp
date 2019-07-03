@@ -11,6 +11,7 @@ int main()
     Sales_data sd2(s1, 10, 22);
     Sales_data sd3(cin);
     print(cout, sd3);
+    Sales_data obj();  // 此处定义的是一个函数
     system("pause");
     return 0;
 }
