@@ -1,0 +1,6 @@
+hero 1 2
+hero 2 3
+hero 2 4
+hero 1 2
+hero 5 5
+heroo 5 5
