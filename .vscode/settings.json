@@ -42,6 +42,7 @@
     "string": "cpp",
     "algorithm": "cpp",
     "functional": "cpp",
-    "iterator": "cpp"
+    "iterator": "cpp",
+    "map": "cpp"
   }
 }
