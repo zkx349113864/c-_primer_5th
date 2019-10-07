@@ -12,6 +12,9 @@ class Sales_data {
     friend Sales_data add(const Sales_data&, const Sales_data&);
     friend std::ostream &print(std::ostream&, const Sales_data&);
     friend std::istream &read(std::istream&, Sales_data&);
+    friend istream& operator>>(istream &is, Sales_data &s);
+    friend ostream& operator<<(ostream &os, Sales_data &s);
+    friend bool operator==(const Sales_data &lhs, const Sales_data &rhs);
 
     public:
     // 新增构造函数
@@ -26,6 +29,8 @@ class Sales_data {
     // 之前已有的其他成员
     std::string isbn() const { return bookNo; }
     Sales_data &combine(const Sales_data&);
+    Sales_data operator+(const Sales_data &s);
+    Sales_data& operator+=(const Sales_data &s);
 
     private:
     double avg_price() const;
@@ -37,5 +42,8 @@ class Sales_data {
 Sales_data add(const Sales_data&, const Sales_data&);
 std::ostream &print(std::ostream&, const Sales_data&);
 std::istream &read(std::istream&, Sales_data&);
+
+istream& operator>>(istream &is, Sales_data &s);
+ostream& operator<<(ostream &os, Sales_data s);
 
 #endif
